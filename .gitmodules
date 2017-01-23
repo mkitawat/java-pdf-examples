@@ -1,0 +1,3 @@
+[submodule "boxable"]
+	path = boxable
+	url = https://github.com/dhorions/boxable.git
