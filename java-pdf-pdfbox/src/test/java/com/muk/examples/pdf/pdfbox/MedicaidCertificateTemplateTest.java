@@ -30,6 +30,8 @@ public class MedicaidCertificateTemplateTest {
     MedicaidCertificateTemplate rptTemplate = new MedicaidCertificateTemplate(parameters);
     
     rptTemplate.save("target/Medicaid_Participation_Certificate.pdf");
+    //rptTemplate.save("target/Medicaid_Participation_Certificate_01.pdf");
+    //rptTemplate.save("target/Medicaid_Participation_Certificate_02.pdf");
     
   }
 }
