@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+  <!-- defines the layout master -->
+  <fo:layout-master-set>
+    <fo:simple-page-master master-name="first"
+                           page-height="29.7cm"
+                           page-width="21cm"
+                           margin-top="1cm"
+                           margin-bottom="2cm"
+                           margin-left="2.5cm"
+                           margin-right="2.5cm"
+                           >
+      <fo:region-body margin-top="3cm"/>
+      <fo:region-before extent="3cm"/>
+      <fo:region-after extent="1.5cm"/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+  
+  <fo:page-sequence master-reference="first">
+  
+    <fo:static-content flow-name="xsl-region-before">
+      <fo:block>
+        <fo:block>
+          <fo:external-graphic src="src/main/resources/wp_logo_blue.png" content-height="60pt"/>
+        </fo:block>
+      </fo:block>
+    </fo:static-content>
+    
+    <fo:flow flow-name="xsl-region-body">
+      <fo:table table-layout="fixed" width="100%" border-collapse="collapse">
+        <fo:table-column column-width="80mm"/>
+        <fo:table-column column-width="81mm"/>
+        <fo:table-body>
+          <fo:table-row>
+            <fo:table-cell number-columns-spanned="2" padding="1mm"
+                           background-color="rgb(224,224,224)"
+                           border-width="1pt" border-style="solid">
+              <fo:block font-size="12px" font-family="Helvetica" font-weight="bold" 
+                        text-align="center">
+              CERTIFICATE OF RECEIPT OF MEDICAID BENEFITS
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Lifeline Application Transaction ID
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                LLAP12345
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell number-columns-spanned="2" padding="1mm"
+                           background-color="rgb(224,224,224)"
+                           border-width="1pt" border-style="solid">
+              <fo:block text-align="center"
+                        font-size="10px" font-family="Helvetica" font-weight="bold">
+              Member Identifiers
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Member’s First Name
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                Jane
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Member’s Last Name
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                Smith
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Member’s DOB
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                1976-01-01
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell number-columns-spanned="2" padding="1mm"
+                           background-color="rgb(224,224,224)"
+                           border-width="1pt" border-style="solid">
+              <fo:block text-align="center"
+                        font-size="10px" font-family="Helvetica" font-weight="bold">
+              Insurance Plan Coverage
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Insurance Payer Name
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                United Health Care
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Insurance Plan Type
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                Medicaid
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Insurance Plan Description
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                MI UHC MEDICAID
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Insurance Plan Group Description
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                MEDICAID
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Insurance Coverage Status
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                ACTIVE
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell number-columns-spanned="2" padding="1mm"
+                           background-color="rgb(224,224,224)"
+                           border-width="1pt" border-style="solid">
+              <fo:block text-align="center"
+                        font-size="10px" font-family="Helvetica" font-weight="bold">
+              X12 Eligibility Transaction
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                Date-Time of x12 270/271 Transaction
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                2017-03-23 19:08:30
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+          <fo:table-row>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px" font-family="Helvetica">
+                X12 Activity ID
+              </fo:block>
+            </fo:table-cell>
+            <fo:table-cell border-width="1pt" border-style="solid" padding-left="1mm" padding-top="1mm">
+              <fo:block font-size="9px">
+                877fa074c16711e6ba460242ac1100
+              </fo:block>
+            </fo:table-cell>
+          </fo:table-row>
+        </fo:table-body>
+      </fo:table>
+      <fo:block space-before.minimum="1cm" padding="0.5mm"
+                font-size="8px" font-family="Helvetica"> 
+                <!-- border-top-style="solid" border-top-width="1px" border-top-color="rgb(224,224,224)"> -->
+        <fo:leader leader-pattern="rule" leader-length="100%" rule-style="solid" rule-thickness="2pt"/>
+        This information was obtained by Wellpass for the purposes of verifying the applicant's/dependent’s 
+        Medicaid coverage and this document will be submitted to Dummy Carrier as proof of eligibility for 
+        Lifeline service.
+      </fo:block>
+    </fo:flow>
+  </fo:page-sequence>
+  
+</fo:root>
